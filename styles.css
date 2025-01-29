@@ -1,0 +1,67 @@
+:root {
+    --color-1: #93c83e;
+    --color-2: #058fcf;
+}
+
+body {
+    width: 65%;
+    justify-content: center;
+    margin-inline: auto;
+    text-align: center;
+}
+
+ul:only-of-type {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.ul-center {
+    display: inline-block;
+    text-align: left;
+}
+
+main {
+    /*background-color: #96d1ec;
+    background-color: #c4eb86;*/
+    margin-top: 4rem;
+    background: linear-gradient(#c4eb86, #96d1ec);
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 4rem;
+    list-style-type: none;
+    grid-template-columns: 1fr 2fr;
+}
+
+#header-img {
+    width: 20rem;
+    margin: -4rem;
+    padding-top: 0.6rem
+ }
+
+nav ul {
+    display: flex;
+    width: 80%;
+    height: 1.5rem;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    list-style-type: none;
+    align-items: flex-end;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 4px;
+    color: green;
+    border: 1px solid green;
+}
+
+.Why-EcoSip {
+    margin-top: 4rem;
+}
