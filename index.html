@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>HTML-Basics</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoSip</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header id="header" class="header">
-      <img src="data:image/png;base64,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" alt="EcoSip Logo" id="header-img"/>
-      <nav id="nav-bar">
+    <main id="main-doc">
+      <nav id="navbar" class="nav">
+        <header>Table of Contents</header>
         <ul>
-          <li><a href="#Why_EcoSip" class="nav-link"><b>Why EcoSip</b></a></li>
-          <li><a href="#Reviews" class="nav-link"><b>Reviews</b></a></li>
-          <li><a href="#Shop" class="nav-link"><b>Shop</b></a></li>
+          <li><a class="nav-link" href="#HTML_Basics">HTML Basics</a></li>
+          <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+          <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+          <li><a class="nav-link" href="#HTML_Document_Structure">HTML Document Structure</a></li>
+          <li><a class="nav-link" href="#HTML_Text_and_Links">HTML Text and Links</a></li>
+          <li><a class="nav-link" href="#HTML_Forms">HTML Forms</a></li>
+          <li><a class="nav-link" href="#HTML_Media_Elements">HTML Media Elements</a></li>
+          <li><a class="nav-link" href="#HTML_Best_Practices">HTML Best Practices</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="hero-section">
-        <h1 class="hero-title">Save the planet, one sip at a time.</h2>
-        <p class="hero-subtitle">The sustainable alternative to plastic straws – stylish, practical, and reusable.</p>
-        <img src="https://target.scene7.com/is/image/Target/GUEST_e14edb04-7bed-4f93-a2d6-f5b99feca6a1?wid=488&hei=488&fmt=pjpeg" alt="picture of a reusable EcoSip straw"/>
-      </div>
-      <div class="Why-EcoSip" id="Why_EcoSip">
-        <label>Why EcoSip?</label>
-        <p>Our reusable straws are the perfect combination of functionality and sustainability. Whether made from stainless steel, glass, or bamboo – EcoSip adapts to your lifestyle and eliminates plastic waste.</p>
-        <div class="center">
-          <ul class="ul-center">
-            <li><b>High-quality materials:</b> Made from stainless steel, glass, or bamboo.</li>
-            <li><b>Durable:</b> Dishwasher-safe and shatterproof (except glass).</li>
-            <li><b>Practical:</b> Available in various sizes, suitable for all types of beverages.</li>
-            <li><b>Eco-friendly:</b> Reduce plastic waste and protect the environment.</li>
-          </ul>
-        </div>
-      </div>
+      <section class="main-section" id="HTML_Basics"> 
+        <header>HTML Basics</header>
+        <p>HTML documents are made up of elements and tags. An HTML element can be a simple tag or a tag with content inside of it. Each element tells the browser how to render content on a webpage.</p>
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <p>HTML elements are the building blocks of an HTML page. An element consists of an opening tag, content, and a closing tag.</p>
+        <ul>
+          <label>Common HTML Elements:<br></br></label>
+          <li><code><<code>p</code>></code>: Paragraph</li>
+          <li><code><<code>h1</code>></code> to <code><<code>h6</code>></code>: Headings (h1 is the largest, h6 is the smallest)</li>
+          <li><code><<code>a</code>></code>: Anchor (hyperlink)</li>
+          <li><code><<code>img</code>></code>: Image</li>
+          <li><code><<code>ul</code>></code>: Unordered List</li>
+          <li><code><<code>ol</code>></code>: Ordered List</li>
+          <li><code><<code>li</code>></code>: List Item</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+        <p>HTML attributes provide additional information about HTML elements. Attributes are always written inside the opening tag of an element.</p>
+        <ul>
+          <label>Common Attributes:<br></br></label>
+          <li><code><<code>id</code>></code>: Unique identifier for an element</li>
+          <li><code><<code>class</code>></code>: Specifies one or more classes for an element</li>
+          <li><code><<code>src</code>></code>: Specifies the source of an image</li>
+          <li><code><<code>href</code>></code>: Specifies the URL for a hyperlink</li>
+          <li><code><<code>alt</code>></code>: Provides alternative text for an image</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Document_Structure">
+        <header>HTML Document Structure</header>
+        <p>Every HTML document follows a basic structure. Here’s an overview of how it looks:</p>
+        <ol>
+          <label>Basic Structure:<br></br></label>
+          <li><b>DOCTYPE declaration:</b> Specifies the document type (e.g., <code><<code>!DOCTYPE html</code>></code>)</li>
+          <li><b>HTML element:</b> The root element that wraps all content (<code><<code>html</code>></code>)</li>
+          <li><b>Head element:</b> Contains meta-information like the character set, title, and link to stylesheets (<code><<code>head</code>></code>)</li>
+          <li><b>Body element:</b> Contains the content that appears on the webpage (<code><<code>body</code>></code>)</li>
+        </ol>
+      </section>
+      <section class="main-section" id="HTML_Text_and_Links">
+        <header>HTML Text and Links</header>
+        <p>HTML provides various ways to work with text and links on a webpage.</p>
+        <ul>
+          <label>Working with Text:<br></br></label>
+          <li><b>Bold: </b><code><<code>b</code>></code> or <code><<code>strong</code>></code></li>
+          <li><i>Italic: </i><code><<code>i</code>></code> or <code><<code>em</code>></code></li>
+          <li><u>Underline:</u> <code><<code>u</code>></code></li>
+        </ul>
+        <label class="no-margin">Creating Links:</label>
+        <p>Use the <code><<code>a</code>></code> tag to create hyperlinks.</p>
+      </section>
+      <section class="main-section" id="HTML_Forms">
+        <header>HTML Forms</header>
+        <p>Forms (<code><<code>form</code>></code>) are used to collect user input. A form can contain input fields (e.g., <code><<code>text</code>></code>, <code><<code>checkbox</code>></code>, <code><<code>password</code>></code>), labels, and submit buttons.</p>
+      </section>
+      <section class="main-section" id="HTML_Media_Elements">
+        <header>HTML Media Elements</header>
+        <p>HTML also allows you to embed media such as images (<code><<code>img</code>></code>), audio (<code><<code>audio</code>></code>), and video (<code><<code>video</code>></code>).</p>
+      </section>
+      <section class="main-section" id="HTML_Best_Practices">
+        <header>HTML Best Practices</header>
+        <p>Here are some best practices to follow when writing HTML:</p>
+        <ol>
+          <li><b>Use semantic elements:</b> Elements like <code><<code>header</code>></code>, <code><<code>footer</code>></code>, <code><<code>article</code>></code>, and <code><<code>section</code>></code> provide meaning to your content and help with accessibility.</li>
+          <li><b>Structure your code properly:</b> Use indentation and spacing to make your HTML readable.</li>
+          <li><b>Avoid inline styles:</b> Instead, use external CSS for styling.</li>
+          <li><b>Validate your HTML:</b> Use the W3C HTML validator to ensure your code is error-free.</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All information is taken from Chat GPT<p>
+      </section>
     </main>
-    <footer>
-    </footer>  
   </body>
 </html>
