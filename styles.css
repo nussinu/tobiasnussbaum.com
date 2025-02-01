@@ -1,67 +1,73 @@
-:root {
-    --color-1: #93c83e;
-    --color-2: #058fcf;
-}
-
 body {
-    width: 65%;
-    justify-content: center;
-    margin-inline: auto;
-    text-align: center;
+  font-family: Verdana, Serif;
 }
 
-ul:only-of-type {
-    text-align: left;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.center {
-    text-align: center;
+code {
+  background-color: lightgrey;
+  border-radius: 3px;
+  padding: 0 2px;
 }
 
-.ul-center {
-    display: inline-block;
-    text-align: left;
+.nav {
+  position: fixed;
+  height: 100%;
+  left: 0px;
+  margin-top: 20px;
+  padding-right: 13px;
+  border-right: 3px solid grey;
+}
+
+nav li {
+  margin-left: -20px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+nav header {
+  margin-left: 19px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  display: block;
 }
 
 main {
-    /*background-color: #96d1ec;
-    background-color: #c4eb86;*/
-    margin-top: 4rem;
-    background: linear-gradient(#c4eb86, #96d1ec);
+  position: absolute;
+  left: 300px;
 }
 
 header {
-    display: grid;
-    width: 100%;
-    height: 4rem;
-    list-style-type: none;
-    grid-template-columns: 1fr 2fr;
+  font-size: 2rem
 }
 
-#header-img {
-    width: 20rem;
-    margin: -4rem;
-    padding-top: 0.6rem
- }
-
-nav ul {
-    display: flex;
-    width: 80%;
-    height: 1.5rem;
-    justify-content: space-between;
-    font-size: 1.4rem;
-    list-style-type: none;
-    align-items: flex-end;
+.main-section {
+  margin: 20px 40px;
+  padding-bottom: 25px
 }
 
-nav ul a {
-    text-decoration: none;
-    padding: 3px;
-    border-radius: 4px;
-    color: green;
-    border: 1px solid green;
+label:not(.no-margin) {
+  margin-left: -40px;
+  margin-bottom: 10px
 }
 
-.Why-EcoSip {
-    margin-top: 4rem;
+@media (max-width: 769px) {
+  .nav {
+    position: static;
+    left: 200px
+  }
+
+  main:not(.nav) {
+    position: relative;
+    left: 0px;
+  }
 }
