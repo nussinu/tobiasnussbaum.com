@@ -1,102 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML-Basics</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Tobias Nussbaum</title>
+    <meta charset="UTF-8"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
   </head>
+
   <body>
-    <main id="main-doc">
-      <nav id="navbar" class="nav">
-        <header>Table of Contents</header>
+    <header>
+      <nav>
         <ul>
-          <li><a class="nav-link" href="#HTML_Basics">HTML Basics</a></li>
-          <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
-          <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
-          <li><a class="nav-link" href="#HTML_Document_Structure">HTML Document Structure</a></li>
-          <li><a class="nav-link" href="#HTML_Text_and_Links">HTML Text and Links</a></li>
-          <li><a class="nav-link" href="#HTML_Forms">HTML Forms</a></li>
-          <li><a class="nav-link" href="#HTML_Media_Elements">HTML Media Elements</a></li>
-          <li><a class="nav-link" href="#HTML_Best_Practices">HTML Best Practices</a></li>
-          <li><a class="nav-link" href="#Reference">Reference</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </nav>
-      <section class="main-section" id="HTML_Basics"> 
-        <header>HTML Basics</header>
-        <p>HTML documents are made up of elements and tags. An HTML element can be a simple tag or a tag with content inside of it. Each element tells the browser how to render content on a webpage.</p>
+    </header>
+    <main>
+      <section class="welcome-section" id="welcome-section">
+        <h1>Hi i am Tobi</h1>
+        <p>on my way to become a Web Developer</p>
+        <p>--Portfolio--</p>
       </section>
-      <section class="main-section" id="HTML_Elements">
-        <header>HTML Elements</header>
-        <p>HTML elements are the building blocks of an HTML page. An element consists of an opening tag, content, and a closing tag.</p>
-        <ul>
-          <label>Common HTML Elements:<br></br></label>
-          <li><code><<code>p</code>></code>: Paragraph</li>
-          <li><code><<code>h1</code>></code> to <code><<code>h6</code>></code>: Headings (h1 is the largest, h6 is the smallest)</li>
-          <li><code><<code>a</code>></code>: Anchor (hyperlink)</li>
-          <li><code><<code>img</code>></code>: Image</li>
-          <li><code><<code>ul</code>></code>: Unordered List</li>
-          <li><code><<code>ol</code>></code>: Ordered List</li>
-          <li><code><<code>li</code>></code>: List Item</li>
-        </ul>
+      <section class="projects" id="projects">
+        <h1>Some of my projects</h1>
+        <div class="projects-grid">
+          <div class="project-tile 1">
+            <a href="https://nussinu.github.io/Udo-Lindenberg-Tribute-Page/index.html" target="_blank">
+              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxkqeX7UmeQayXBepfOjrAcpX5WacmqsTo86G8kEBWRDZER4T6DIcBn9cuau9zEuY1zk-LqEW8gxixxZXjBdzqHw" alt="Udo Lindenberg Tribute Page">
+              <p>Udo Lindenberg Tribute</p>
+            </a>
+          </div>
+          <div class="project-tile 2">
+            <a href="https://nussinu.github.io/HTML-technical-documentation/index.html" target="_blank">
+              <img src="https://nussinu.github.io/HTML-technical-documentation-page-image/HTML-img.png" alt="HTML Technical Documentation Page">
+              <p>HTML Technical Documentation</p>
+            </a>
+          </div>
+        </div>
+        <div class="to-be-continued">
+          <p><b>More projects will follow soon...</b></p>
+        </div>
       </section>
-      <section class="main-section" id="HTML_Attributes">
-        <header>HTML Attributes</header>
-        <p>HTML attributes provide additional information about HTML elements. Attributes are always written inside the opening tag of an element.</p>
-        <ul>
-          <label>Common Attributes:<br></br></label>
-          <li><code><<code>id</code>></code>: Unique identifier for an element</li>
-          <li><code><<code>class</code>></code>: Specifies one or more classes for an element</li>
-          <li><code><<code>src</code>></code>: Specifies the source of an image</li>
-          <li><code><<code>href</code>></code>: Specifies the URL for a hyperlink</li>
-          <li><code><<code>alt</code>></code>: Provides alternative text for an image</li>
-        </ul>
-      </section>
-      <section class="main-section" id="HTML_Document_Structure">
-        <header>HTML Document Structure</header>
-        <p>Every HTML document follows a basic structure. Here’s an overview of how it looks:</p>
-        <ol>
-          <label>Basic Structure:<br></br></label>
-          <li><b>DOCTYPE declaration:</b> Specifies the document type (e.g., <code><<code>!DOCTYPE html</code>></code>)</li>
-          <li><b>HTML element:</b> The root element that wraps all content (<code><<code>html</code>></code>)</li>
-          <li><b>Head element:</b> Contains meta-information like the character set, title, and link to stylesheets (<code><<code>head</code>></code>)</li>
-          <li><b>Body element:</b> Contains the content that appears on the webpage (<code><<code>body</code>></code>)</li>
-        </ol>
-      </section>
-      <section class="main-section" id="HTML_Text_and_Links">
-        <header>HTML Text and Links</header>
-        <p>HTML provides various ways to work with text and links on a webpage.</p>
-        <ul>
-          <label>Working with Text:<br></br></label>
-          <li><b>Bold: </b><code><<code>b</code>></code> or <code><<code>strong</code>></code></li>
-          <li><i>Italic: </i><code><<code>i</code>></code> or <code><<code>em</code>></code></li>
-          <li><u>Underline:</u> <code><<code>u</code>></code></li>
-        </ul>
-        <label class="no-margin">Creating Links:</label>
-        <p>Use the <code><<code>a</code>></code> tag to create hyperlinks.</p>
-      </section>
-      <section class="main-section" id="HTML_Forms">
-        <header>HTML Forms</header>
-        <p>Forms (<code><<code>form</code>></code>) are used to collect user input. A form can contain input fields (e.g., <code><<code>text</code>></code>, <code><<code>checkbox</code>></code>, <code><<code>password</code>></code>), labels, and submit buttons.</p>
-      </section>
-      <section class="main-section" id="HTML_Media_Elements">
-        <header>HTML Media Elements</header>
-        <p>HTML also allows you to embed media such as images (<code><<code>img</code>></code>), audio (<code><<code>audio</code>></code>), and video (<code><<code>video</code>></code>).</p>
-      </section>
-      <section class="main-section" id="HTML_Best_Practices">
-        <header>HTML Best Practices</header>
-        <p>Here are some best practices to follow when writing HTML:</p>
-        <ol>
-          <li><b>Use semantic elements:</b> Elements like <code><<code>header</code>></code>, <code><<code>footer</code>></code>, <code><<code>article</code>></code>, and <code><<code>section</code>></code> provide meaning to your content and help with accessibility.</li>
-          <li><b>Structure your code properly:</b> Use indentation and spacing to make your HTML readable.</li>
-          <li><b>Avoid inline styles:</b> Instead, use external CSS for styling.</li>
-          <li><b>Validate your HTML:</b> Use the W3C HTML validator to ensure your code is error-free.</li>
-        </ol>
-      </section>
-      <section class="main-section" id="Reference">
-        <header>Reference</header>
-        <p>All information is taken from Chat GPT<p>
+      <section class="contact" id="contact">
+        <div class="flex-h1">
+          <h1>My Socials</h1>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/freecodecamp/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com/tobinuss">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/nussinu">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </section>
     </main>
+    <footer>
+    </footer>
   </body>
 </html>
