@@ -10,56 +10,60 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="navbar" id="navbar">
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Socials</a></li>
         </ul>
       </nav>
     </header>
     <main>
+
       <section class="welcome-section" id="welcome-section">
-        <h1>Hi i am Tobi</h1>
-        <p>on my way to become a Web Developer</p>
-        <p>--Portfolio--</p>
+        <h1>About Me</h1>
+        <p>Hello! My name is Tobias Nussbaum and I started learning HTML, CSS and JavaScript out of curiosity. For the past month, I’ve been diving into the world of web development and working on my first projects.</p>
+        <p>So far, I have created a fan page about Udo Lindenberg and a technical documentation page about HTML. Currently, I’m building my portfolio website to showcase my past and future projects.</p>
       </section>
+
       <section class="projects" id="projects">
-        <h1>Some of my projects</h1>
+        <h1><u>My Projects</u></h1>
         <div class="projects-grid">
-          <div class="project-tile 1">
+          <div class="project-tile g1">
             <a href="https://nussinu.github.io/Udo-Lindenberg-Tribute-Page/index.html" target="_blank">
               <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxkqeX7UmeQayXBepfOjrAcpX5WacmqsTo86G8kEBWRDZER4T6DIcBn9cuau9zEuY1zk-LqEW8gxixxZXjBdzqHw" alt="Udo Lindenberg Tribute Page">
-              <p>Udo Lindenberg Tribute</p>
+              <p>Udo Lindenberg Tribute Page</p>
             </a>
           </div>
-          <div class="project-tile 2">
+          <div class="project-tile g2">
             <a href="https://nussinu.github.io/HTML-technical-documentation/index.html" target="_blank">
               <img src="https://nussinu.github.io/HTML-technical-documentation-page-image/HTML-img.png" alt="HTML Technical Documentation Page">
-              <p>HTML Technical Documentation</p>
+              <p>HTML Technical Documentation Page</p>
             </a>
           </div>
-        </div>
-        <div class="to-be-continued">
-          <p><b>More projects will follow soon...</b></p>
+          <div class="project-tile gp">
+            <p><b>More projects will follow soon...</b></p>
+          </div>
         </div>
       </section>
+
       <section class="contact" id="contact">
         <div class="flex-h1">
           <h1>My Socials</h1>
         </div>
         <div class="socials">
-          <a href="https://www.facebook.com/freecodecamp/">
-            <i class="fab fa-facebook-f"></i>
+          <a id="profile-link" href="www.linkedin.com/in/tobias-nussbaum-866b32268" target="_blank">
+            <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://instagram.com/tobinuss">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://github.com/nussinu">
+          <a id="profile-link" href="https://github.com/nussinu" target="_blank">
             <i class="fab fa-github"></i>
+          </a>
+          <a id="profile-link" href="https://www.freecodecamp.org/nussinu" target="_blank">
+            <img class="fab freecodecamp-icon" src="https://design-style-guide.freecodecamp.org/img/fcc_primary_small.svg" alt="Freecodecamp-Icon" width="50px" height="50px">
           </a>
         </div>
       </section>
+      
     </main>
     <footer>
     </footer>
